@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "cover_img": "https://i.ibb.co.com/Svfx93j/damian-zaleski-RYyr-k3-Ysqg-unsplash.jpg",
+    "author_img": "https://i.ibb.co.com/xhrXgMh/author-1.png",
+    "name": "John Doe",
+    "reading_time": "5 min",
+    "posted_date": "Oct 1 (25 days ago)",
+    "title": "The Future of Web Development",
+    "hash_tags": ["#WebDev", "#Programming", "#Tech"]
+  },
+  {
+    "id": 2,
+    "cover_img": "https://i.ibb.co.com/sgVsTS4/development-opportunity-strategy-improvement-word.jpg",
+    "author_img": "https://i.ibb.co.com/Q9MffS5/author-2.png",
+    "name": "Jane Smith",
+    "reading_time": "8 min",
+    "posted_date": "Sep 29 (27 days ago)",
+    "title": "AI Revolution in Daily Life",
+    "hash_tags": ["#AI", "#Tech", "#Innovation"]
+  },
+  {
+    "id": 3,
+    "cover_img": "https://i.ibb.co.com/T1BPQ1Q/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+    "author_img": "https://i.ibb.co.com/g6WY3Yf/author-3.png",
+    "name": "Emily Johnson",
+    "reading_time": "10 min",
+    "posted_date": "Sep 20 (36 days ago)",
+    "title": "A Guide to Effective Remote Work",
+    "hash_tags": ["#RemoteWork", "#Productivity", "#WorkLife"]
+  },
+  {
+    "id": 4,
+    "cover_img": "https://i.ibb.co.com/sFy8CbN/author-4.png",
+    "author_img": "https://example.com/profile4.jpg",
+    "name": "Michael Lee",
+    "reading_time": "7 min",
+    "posted_date": "Aug 15 (72 days ago)",
+    "title": "Top JavaScript Frameworks in 2024",
+    "hash_tags": ["#JavaScript", "#WebDev", "#Coding"]
+  },
+  {
+    "id": 5,
+    "cover_img": "https://i.ibb.co.com/C0L7qF8/lauren-mancke-a-OC7-TSLb1o8-unsplash.jpg",
+    "author_img": "https://i.ibb.co.com/PWq0RJ7/author-5.png",
+    "name": "Sarah Brown",
+    "reading_time": "6 min",
+    "posted_date": "Jul 5 (113 days ago)",
+    "title": "Sustainable Living: A Modern Approach",
+    "hash_tags": ["#Sustainability", "#EcoFriendly", "#GreenLiving"]
+  }
+]
