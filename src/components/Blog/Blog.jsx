@@ -12,6 +12,8 @@ const Blog = ({ blog, handleAddToBookmarks, handleSpentTimeOnRead }) => {
         hash_tags,
     } = blog;
 
+    const reading_time_number = parseInt(reading_time);
+
     return (
         <div>
             <div>
@@ -59,7 +61,7 @@ const Blog = ({ blog, handleAddToBookmarks, handleSpentTimeOnRead }) => {
 
             <button
                 className="underline text-purple font-semibold text-xl"
-                onClick={() => handleSpentTimeOnRead(reading_time)}
+                onClick={() => handleSpentTimeOnRead(reading_time_number)}
             >
                 Mark as read
             </button>

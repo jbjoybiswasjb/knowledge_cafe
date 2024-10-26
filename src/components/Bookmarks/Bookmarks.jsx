@@ -30,6 +30,7 @@ const Bookmarks = ({ bookmarks, totalReadingTime }) => {
 
 Bookmarks.propTypes = {
     bookmarks: PropTypes.array.isRequired,
+    totalReadingTime: PropTypes.number,
 };
 
 export default Bookmarks;
