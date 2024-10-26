@@ -1,6 +1,6 @@
 const Main = () => {
     return (
-        <main>
+        <main className="w-4/5 mx-auto">
             Main
         </main>
     );
