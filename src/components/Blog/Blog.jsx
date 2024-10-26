@@ -3,8 +3,14 @@ import PropTypes from 'prop-types';
 const Blog = (props) => {
 
     const { blog } = props;
-    const { cover_img, author_img, name, reading_time, title,
-        posted_date, hash_tags } = blog;
+    const { 
+        cover_img, 
+        author_img, 
+        name, 
+        reading_time, 
+        title,        
+        posted_date, 
+        hash_tags } = blog;
 
     return (
         <div className="mb">
@@ -37,12 +43,14 @@ const Blog = (props) => {
 
             <div className="mb-6">
                 {
-                    hash_tags.map(hash_tag =>
+                    hash_tags.map((hash_tag, index) =>
                         <span
                             className="mr-4 font-medium text-xl text-mainHeading/60 hover:underline"
-                            key={hash_tag + '1'}
+                            key={index}
                         >
-                            {hash_tag}
+                            <a href="#">
+                                {hash_tag}
+                            </a>
                         </span>
                     )
                 }
