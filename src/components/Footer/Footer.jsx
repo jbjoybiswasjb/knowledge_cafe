@@ -1,7 +1,9 @@
 const Footer = () => {
     return (
-        <footer className="w-4/5 mx-auto">
-            Footer
+        <footer>
+            <div className="w-4/5 mx-auto">
+                Footer
+            </div>
         </footer>
     );
 };

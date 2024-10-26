@@ -1,7 +1,9 @@
 const Main = () => {
     return (
-        <main className="w-4/5 mx-auto">
-            Main
+        <main>
+            <div className="w-4/5 mx-auto">
+                Main
+            </div>
         </main>
     );
 };
