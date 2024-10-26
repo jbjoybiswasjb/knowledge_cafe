@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types';
+
 const Blog = (props) => {
-    
+
     const { blog } = props;
     const { cover_img, author_img, name, reading_time, title,
         posted_date, hash_tags } = blog;
@@ -21,7 +23,11 @@ const Blog = (props) => {
                 </div>
 
                 <div>
-                    <span className="font-medium text-xl text-mainHeading/60">{reading_time} read</span>
+                    <span className="font-medium text-xl text-mainHeading/60">{reading_time} read
+                        <button className="ml-4 hover:bg-slate-400 p-3 rounded-full">
+                            <i className="fa-regular fa-bookmark"></i>
+                        </button>
+                    </span>
                     <span></span>
                 </div>
 
@@ -33,7 +39,8 @@ const Blog = (props) => {
                 {
                     hash_tags.map(hash_tag =>
                         <span
-                        className="mr-4 font-medium text-xl text-mainHeading/60 hover:underline"
+                            className="mr-4 font-medium text-xl text-mainHeading/60 hover:underline"
+                            key={hash_tag + '1'}
                         >
                             {hash_tag}
                         </span>
@@ -41,11 +48,23 @@ const Blog = (props) => {
                 }
             </div>
 
-            <a href="#" className="underline text-purple font-semibold text-xl">Mark as read</a>          
+            <a href="#" className="underline text-purple font-semibold text-xl">Mark as read</a>
 
             <hr className="my-10 text-mainHeading/10" />
         </div>
     );
 };
+
+
+Blog.propTypes = {
+    blog: PropTypes.object.isRequired,
+    cover_img: PropTypes.string.isRequired,
+    author_img: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    reading_time: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    posted_date: PropTypes.string.isRequired,
+    hash_tags: PropTypes.array.isRequired,
+}
 
 export default Blog;
