@@ -9,12 +9,12 @@ const Blog = (props) => {
     return (
         <div className="mb">
             <div>
-                <img src={cover_img} alt="" className="rounded-lg" />
+                <img src={cover_img} title={title} alt={`Title of cover phot ${title}`} className="rounded-lg" />
             </div>
             <div className="flex items-center justify-between my-8">
                 <div className="flex items-center gap-6">
                     <div className="w-16 h-16 rounded-full">
-                        <img src={author_img} alt="" className="rounded-full" />
+                        <img src={author_img} title={name} alt={`Title of author name ${name}`} className="rounded-full" />
                     </div>
                     <div>
                         <strong className="font-bold text-2xl">{name}</strong>
