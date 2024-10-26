@@ -2,19 +2,19 @@ import PropTypes from 'prop-types';
 import { CiBookmark } from "react-icons/ci";
 
 const Blog = (props) => {
-
-    const { blog } = props;
-    const { 
-        cover_img, 
-        author_img, 
-        name, 
-        reading_time, 
-        title,        
-        posted_date, 
-        hash_tags } = blog;
+    const { blog, handleAddToBookmarks } = props;
+    const {
+        cover_img,
+        author_img,
+        name,
+        reading_time,
+        title,
+        posted_date,
+        hash_tags,
+    } = blog;
 
     return (
-        <div className="mb">
+        <div>
             <div>
                 <img src={cover_img} title={title} alt={`Title of cover phot ${title}`} className="rounded-lg" />
             </div>
@@ -31,7 +31,9 @@ const Blog = (props) => {
 
                 <div>
                     <span className="flex items-center font-medium text-xl text-mainHeading/60">{reading_time} read
-                        <button className="ml-4 hover:bg-slate-400 p-3 rounded-full text-2xl">
+                        <button className="ml-4 hover:bg-slate-400 p-3 rounded-full text-2xl"
+                            onClick={() => handleAddToBookmarks?.handleAddToBookmarks(blog)}
+                        >
                             <CiBookmark />
                         </button>
                     </span>
@@ -66,13 +68,7 @@ const Blog = (props) => {
 
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    cover_img: PropTypes.string.isRequired,
-    author_img: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    reading_time: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    posted_date: PropTypes.string.isRequired,
-    hash_tags: PropTypes.array.isRequired,
+    handleAddToBookmarks: PropTypes.object.isRequired,
 }
 
 export default Blog;
