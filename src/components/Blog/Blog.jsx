@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { CiBookmark } from "react-icons/ci";
 
 const Blog = (props) => {
 
@@ -17,7 +18,7 @@ const Blog = (props) => {
             <div>
                 <img src={cover_img} title={title} alt={`Title of cover phot ${title}`} className="rounded-lg" />
             </div>
-            <div className="flex items-center justify-between my-8">
+            <div className="flex gap-4 items-center justify-between my-8">
                 <div className="flex items-center gap-6">
                     <div className="w-16 h-16 rounded-full">
                         <img src={author_img} title={name} alt={`Title of author name ${name}`} className="rounded-full" />
@@ -29,19 +30,18 @@ const Blog = (props) => {
                 </div>
 
                 <div>
-                    <span className="font-medium text-xl text-mainHeading/60">{reading_time} read
-                        <button className="ml-4 hover:bg-slate-400 p-3 rounded-full">
-                            <i className="fa-regular fa-bookmark"></i>
+                    <span className="flex items-center font-medium text-xl text-mainHeading/60">{reading_time} read
+                        <button className="ml-4 hover:bg-slate-400 p-3 rounded-full text-2xl">
+                            <CiBookmark />
                         </button>
                     </span>
-                    <span></span>
                 </div>
 
             </div>
 
             <h2 className="mb-6 text-4xl text-mainHeading font-bold">{title}</h2>
 
-            <div className="mb-6">
+            <div className="mb-6 flex flex-wrap gap-2">
                 {
                     hash_tags.map((hash_tag, index) =>
                         <span
