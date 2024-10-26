@@ -11,6 +11,13 @@ const Main = () => {
         setBookmarks(newBookmarks);
     }
 
+    const [totalReadingTime, setTotalReadingTime] = useState(0);
+
+    const handleSpentTimeOnRead = (time) => {
+        const newTotalReadingTime = totalReadingTime + time;
+        setTotalReadingTime(newTotalReadingTime);
+    }
+
     return (
         <main>
             <div className="w-4/5 mx-auto my-8">
@@ -18,9 +25,12 @@ const Main = () => {
                     
                     <Blogs
                         handleAddToBookmarks={handleAddToBookmarks}
+                        handleSpentTimeOnRead={handleSpentTimeOnRead}                        
                     ></Blogs>
+
                     <Bookmarks
                         bookmarks={bookmarks}
+                        totalReadingTime={totalReadingTime}                        
                     ></Bookmarks>
 
                 </div>
