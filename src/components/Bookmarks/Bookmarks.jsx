@@ -15,10 +15,10 @@ const Bookmarks = ({ bookmarks, totalReadingTime }) => {
 
                 <div>
                     {
-                        bookmarks.map(bookmark =>
+                        bookmarks.map((bookmark, index) =>
                             <Bookmark
                                 bookmark={bookmark}
-                                key={bookmark?.id}
+                                key={index}
                             ></Bookmark>
                         )
                     }
